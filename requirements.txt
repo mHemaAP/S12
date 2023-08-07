@@ -1,0 +1,12 @@
+torch
+torchvision
+torchinfo
+torchsummary
+tqdm
+matplotlib
+albumentations
+numpy
+torch-lr-finder
+grad-cam
+pytorch-lightning
+torchmetrics
