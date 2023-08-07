@@ -179,14 +179,6 @@ class custResNet(LightningModule):
 
         return x 
 
-    def common_step(self, batch, loss_metric, acc_metric):
-        x, y = batch
-        batch_len = y.numel()
-        logits = self.forward(x)
-        loss = self.criterion(logits, y)
-        loss_metric.update(loss, batch_len)
-        acc_metric.update(logits, y)
-        return loss
 
     def training_step(self, batch, batch_idx):
         x, y = batch
@@ -195,6 +187,9 @@ class custResNet(LightningModule):
         train_loss = self.criterion(logits, y)
         self.train_loss.update(train_loss, batch_len)
         self.train_accuracy.update(logits, y)
+
+        self.log("train_step_loss", self.train_loss, prog_bar=True, logger=True)
+        self.log("train_step_acc", self.train_accuracy, prog_bar=True, logger=True)        
 
         return train_loss
 

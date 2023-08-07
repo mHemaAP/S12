@@ -161,17 +161,11 @@ Best Train Accuracy: 86.66%
 
 Best Test Accuracy: 90.52%
 
-Training Loss:
-
-
-Training Accuracy:
-
+Validation Accuracy:
+![Validation Accuracy Plot](Log_Images/validation_step_accuracy.png)
 
 Validation Loss:
-
-
-Validation Accuracy:
-
+![Validation Loss Plot](Log_Images/validation_step_loss.png) 
 
 Misclassified Images:
 
