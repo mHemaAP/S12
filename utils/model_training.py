@@ -129,7 +129,7 @@ class trainModel():
 
     def save_misclassified_to_file(self):
 
-        path = './misclassifeed_examples'
+        path = './misclassifed_examples'
         os.mkdir(path)
         os.chdir(path)
         for i in range(len(self.incorrect_preds["images"])):
