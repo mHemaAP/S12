@@ -1,5 +1,5 @@
-# S12
-This is the repository for all the work done relating to ERA  S12 assignment
+# S12 - CIFAR10 Data Set Classification Using Pytorch Lightning 
+This is the repository for all the work done relating to ERA S12 assignment
 
 ## Description
 
@@ -63,7 +63,10 @@ import albumentations as A
 
 ```
 Sample images used for training after applying the above transformations are as follows
-![CIFAR10 Training Samples](Log_Images/Training_data_samples.png)
+
+
+![Training Data Samples](Log_Images/Training_data_samples.png)
+
 
 ### 2. models Module
 This module contains custom resnet model using Pytorch Lightning. Following is the model summary as given by the Lightning Model Summary callback 
@@ -140,7 +143,7 @@ Apart from this it also does the following:
 5. Has functionality to save the misclassified examples to files in the folder 'misclassified_examples'
 6. Has functionality to save the trained model to 'cust_resnet_model_saved.pth' file 
 
-![LR Finder](Log_Images/LR_finder_curve.png)
+![LR Finder Curve](Log_Images/LR_finder_curve.png)
 
 #### 3.2 utils/common.py
 This module contains following helper functions/classes:
